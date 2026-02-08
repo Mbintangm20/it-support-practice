@@ -18,17 +18,29 @@ Mini project latihan IT Support & Web Development menggunakan PHP, MySQL, dan Gi
 
 ## 📁 Struktur Folder
 it-support-practice/
-├── backend/
-│   ├── config.php
-│   ├── login.php
-│   └── logout.php
-├── frontend/
-│   ├── login.html
-│   ├── dashboard.php
-│   ├── style.css
-│   └── script.js
-└── database/
-    └── inter_db.sql
+├─ frontend/
+│  ├─ login.html
+│  ├─ dashboard.html
+│  ├─ style.css
+│  └─ script.js
+│
+├─ backend/
+│  ├─ php/
+│  │  ├─ koneksi.php
+│  │  ├─ login.php
+│  │  └─ get_data.php
+│  │
+│  └─ python/
+│     └─ main.py
+│
+├─ database/
+│  └─ intern_db.sql
+│
+├─ laporan/
+│  └─ laporan_harian.txt
+│
+└─ README.md
+
 ## 🗄 Database
 Tabel `users`
 - id
