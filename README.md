@@ -1,51 +1,44 @@
-# IT Support Intern Practice Project
+# IT Support Practice Project
 
-Project ini dibuat sebagai latihan dan simulasi kerja untuk posisi **IT Support Intern**, mencakup pengembangan aplikasi web sederhana dari sisi frontend, backend, database, serta workflow kerja menggunakan GitHub.
+Mini project latihan IT Support & Web Development menggunakan PHP, MySQL, dan GitHub.
 
-## 🎯 Tujuan Project
-- Melatih dasar IT Support berbasis aplikasi web
-- Memahami alur kerja frontend & backend
-- Melatih debugging, testing, dan pelaporan progres
-- Membiasakan penggunaan Git & GitHub
-
-## 🛠 Tech Stack
-### Frontend
-- HTML
-- CSS
-- JavaScript
-
-### Backend
-- PHP
-- Python (FastAPI)
-
-### Database
-- MySQL
-
-### Tools
+## 🔧 Tech Stack
+- PHP 7+
+- MySQL (phpMyAdmin)
+- HTML, CSS, JavaScript
+- Apache (XAMPP)
 - Git & GitHub
-- VS Code
-- Git Bash
-- Browser (Chrome)
+
+## 📂 Fitur
+- Login user menggunakan PHP & MySQL
+- Session authentication
+- Dashboard protected
+- Logout system
+- Struktur folder rapi
 
 ## 📁 Struktur Folder
 it-support-practice/
-├── frontend/ # Tampilan website
 ├── backend/
-│ ├── php/ # Backend PHP
-│ └── python/ # Backend Python
-├── database/ # File SQL database
-├── laporan/ # Laporan harian
-└── README.md
+│   ├── config.php
+│   ├── login.php
+│   └── logout.php
+├── frontend/
+│   ├── login.html
+│   ├── dashboard.php
+│   ├── style.css
+│   └── script.js
+└── database/
+    └── users.sql
+## 🗄 Database
+Tabel `users`
+- id
+- username
+- password
+- role
 
-## 🚀 Cara Menjalankan (Frontend)
-1. Buka folder `frontend`
-2. Jalankan file `login.html` di browser
-3. Login akan diarahkan ke `dashboard.html`
-
-## 🧪 Status Project
-🔄 On Progress — digunakan sebagai bahan latihan dan pembelajaran
-
-## 👤 Author
-Muhamad Bintang Mandala
-Fresh Graduate Teknik Informatika
-Interest: IT Support, Web Development, Data
+## ▶ Cara Menjalankan
+1. Clone repository
+2. Letakkan di folder `htdocs`
+3. Import database di phpMyAdmin
+4. Jalankan Apache & MySQL
+5. Akses `http://localhost/it-support-practice/frontend/login.html`
