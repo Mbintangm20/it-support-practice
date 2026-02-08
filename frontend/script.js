@@ -10,6 +10,29 @@ function login() {
     window.location.href = "dashboard.html";
   }
 }
+document.getElementById("loginForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  let user = document.getElementById("username").value;
+  let pass = document.getElementById("password").value;
+
+  fetch("../backend/php/login.php", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: `username=${user}&password=${pass}`
+  })
+  .then(res => res.text())
+  .then(data => {
+    if (data === "success") {
+      window.location.href = "dashboard.html";
+    } else {
+      document.getElementById("error").innerText = "Login gagal";
+    }
+  });
+});
+
 
 // ===== DASHBOARD =====
 let no = 1;
