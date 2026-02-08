@@ -28,7 +28,7 @@ it-support-practice/
 │   ├── style.css
 │   └── script.js
 └── database/
-    └── users.sql
+    └── inter_db.sql
 ## 🗄 Database
 Tabel `users`
 - id
