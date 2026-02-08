@@ -1,33 +1,17 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+table {
+  border-collapse: collapse;
 }
 
-.login-box {
-  width: 300px;
-  margin: 100px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 8px;
+th, td {
+  padding: 8px;
   text-align: center;
 }
 
-input {
-  width: 90%;
-  padding: 8px;
-  margin: 8px 0;
+th {
+  background: #007bff;
+  color: white;
 }
 
 button {
-  width: 100%;
-  padding: 8px;
-  background: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-#error {
-  color: red;
-  margin-top: 10px;
+  border-radius: 4px;
 }

@@ -2,20 +2,40 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Dashboard</title>
+  <title>Dashboard IT Support</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <div class="login-box">
-    <h2>Dashboard</h2>
-    <p>Selamat datang di sistem IT Support</p>
+    <h2>Input Data Tiket</h2>
+
+    <input type="text" id="nama" placeholder="Nama User">
+    <input type="text" id="masalah" placeholder="Masalah">
+    <button onclick="tambahData()">Tambah</button>
+  </div>
+
+  <div class="login-box">
+    <h2>Daftar Tiket</h2>
+
+    <table border="1" width="100%">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>Masalah</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="tabelData">
+        <!-- Data muncul di sini -->
+      </tbody>
+    </table>
+
+    <br>
     <button onclick="logout()">Logout</button>
   </div>
 
-  <script>
-    function logout() {
-      window.location.href = "login.html";
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
